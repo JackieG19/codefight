@@ -23,36 +23,110 @@ answerIds = [[6, 4], [1, 2], [5], [3]]
 views = [[2, 1, 2], [6, 3, 5], [3, 3, 0], [5, 1, 1], [4, 2, 3], [1, 4, 2]]
 ```
 
-Topic falls in the array of **topicIds**:
-- Topic 1 falls in the array 0 and 2
-- Topic 2 falls in the array 0, 1 and 3
-- Topic 3 falls in the array 0, 1 and 3
-- Topic 4 falls in the array 1 and 2
+**topic 1** 
+- tagged to questions 0 and 2.
+- answerIds correspond are 6, 4, and 5.
+```
+views[1][0] = 6
+views[1][2] = 5
+views[1][1] = 3
 
-Topic question answered in the array **answerIds**:
-- Topic 1 tagged question [6, 4], [5]
-- Topic 2 tagged question [6, 4], [1, 2], [3]
-- Topic 3 tagged question [6, 4], [1, 2], [3]
-- Topic 4 tagged question [1, 2], [5]
+views[3][0] = 5
+views[3][2] = 1
+views[3][1] = 1
 
-Topic viewedin the array **views**:
-- Topic 1 
-  - question 6 -> view array 1 = [6, 3, 5]
-  - question 4 -> view array 4 = [4, 2, 3]
-  - question 5 -> view array 5 = [1, 4, 2]
+views[4][0] = 4
+views[4][2] = 3
+views[4][1] = 2
+```
+3 Most Viewed Writers:
+- the userID 3 has 5 views,
+- the userID 2 has 3 views,
+- the userID 1 has 1 view.
+-----------------------------
 
-- Topic 2 
-  - question 6 -> view array 1 = [6, 3, 5]
-  - question 4 -> view array 4 = [4, 2, 3]
-  - question 1 -> view array 5 = [1, 4, 2]
-  - question 2 -> view array 0 = [2, 1, 2]
-  - question 3 -> view array 2 = [3, 3, 0]
+**topic 2**
+- tagged to questions 0, 1, and 3.
+- answerIds correspond are 6, 4, 1, 2, and 3
+```
+views[1][0] = 6
+views[1][2] = 5
+views[1][1] = 3
 
+views[4][0] = 4
+views[4][2] = 3
+views[4][1] = 2
 
-- Topic 3 
-  
-- Topic 4 
+views[5][0] = 1
+views[5][2] = 2
+views[5][1] = 4
 
+views[0][0] = 2
+views[0][2] = 2
+views[4][1] = 1
+
+views[2][0] = 3
+views[3][2] = 0
+views[3][1] = 3
+```
+4 Most Viewed Writers:
+- the user with ID 3 has 5 views,
+- the user with ID 2 has 3 views,
+- the user with ID 1 has 2 views,
+- the user with ID 4 has 2 views.
+----------------------------------
+
+**topic 3**
+- tagged to questions 0, 1, and 3
+- answerIds correspond are 6, 4, 1, 2, and 3
+```
+views[1][0] = 6
+views[1][2] = 5
+views[1][1] = 3
+
+views[4][0] = 4
+views[4][2] = 3
+views[4][1] = 2
+
+views[5][0] = 1
+views[5][2] = 2
+views[5][1] = 4
+
+views[0][0] = 2
+views[0][2] = 2
+views[4][1] = 1
+
+views[2][0] = 3
+views[3][2] = 0
+views[3][1] = 3
+```
+4 Most Viewed Writers:
+- the user with ID 3 has 5 views,
+- the user with ID 2 has 3 views,
+- the user with ID 1 has 2 views,
+- the user with ID 4 has 2 views.
+-----------------------------------
+
+**topic 4**
+- tagged to questions 1 and 2
+- answerId correspond are 1, 2, and 5
+```
+views[5][0] = 1
+views[5][2] = 2
+views[5][1] = 4
+
+views[0][0] = 2
+views[0][2] = 2
+views[0][1] = 1
+
+views[3][0] = 5
+views[3][2] = 1
+views[3][1] = 1
+
+2 Most Viewed Writers:
+- the user with ID 1 has 3 views
+- the user with ID 4 has 2 views 
+```
 ```
 Output:
 
